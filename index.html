@@ -1,13 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce</title>
+    <title>TitoStore</title>
+    <meta name="description" content="Bienvenido a TitoStore, tu multitienda preferida">
+    <meta name="keywords" content="venta, ecommerce, multitienda, tecnologia, hombre, mujer, Dormitorio">
+    <meta name="author" content="Hector Veas"/>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/app.ts"></script>
+    <script src="https://kit.fontawesome.com/dd38c71bf7.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <nav id="main-nav">
+        <ul>
+            <li>
+                <a href="#"><span><i class="fas fa-store-alt"></i></span>TitoStore</a>
+            </li>
+            <li>
+                <a href="#">Electro
+                    <span class="arrow"><i class="fas fa-angle-down"></i></span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#" onclick="Menu('televisor')">Televisores</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick = "Menu('audio')">Audio</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="Menu('marcasDesc')">Marcas Destacadas</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Dormitorio
+                    <span class="arrow"><i class="fas fa-angle-down"></i></span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#" onclick="Menu('ropaCama')">Ropa de Cama</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="Menu('camas')">Camas</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="Menu('muebles')">Muebles de Dormitorio</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="Menu('colchones')">Colchones</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Mujer
+                    <span class="arrow"><i class="fas fa-angle-down"></i></span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#" onclick="Menu('ropaDeMuj')">Ropa Deportiva</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="Menu('accMuj')">Accesorios</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="Menu('zapMuj')">Zapatos</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="Menu('oferMuj')">Ofertas</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Hombre
+                    <span class="arrow"><i class="fas fa-angle-down"></i></span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#" onclick="Menu('ropaDeHom')" >Ropa Deportiva</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="Menu('zapHom')">Zapatos</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="Menu('oferHom')">Ofertas</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="Menu('accHom')">Accesorios</a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <div id="resultado"></div>
+    <section>
+        <h1>Bienvenido a TitoStore!</h1>
+    </section>
+    <script src="js/app.js"></script>
 </body>
+
 </html>
